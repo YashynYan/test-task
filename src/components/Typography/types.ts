@@ -1,0 +1,5 @@
+export enum TypographyType {
+    SECTION_TITLE = "SECTION_TITLE",
+    HEADLINE = "HEADLINE",
+    DESCRIPTION = "DESCRIPTION",
+}
