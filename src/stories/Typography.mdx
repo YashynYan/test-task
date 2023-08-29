@@ -1,0 +1,48 @@
+import {
+  ArgTypes,
+  Canvas,
+  Controls,
+  Description,
+  Meta,
+  Subtitle,
+  Story,
+} from "@storybook/blocks";
+
+import * as TypographyStories from "./Typography.stories";
+
+# Avatar
+
+<Meta of={TypographyStories} />
+
+<Subtitle>Displays typography inside App</Subtitle>
+
+Use Typography to define text styling for displaying.
+
+The typography type should _always_ be present when using Typography component.
+
+<ArgTypes of={TypographyStories} />
+
+# Section Title
+**Font:** Poppins
+
+**Font Size:** 56px
+<Canvas meta={TypographyStories}>
+  <Story of={TypographyStories.SectionTitle} />
+</Canvas>
+
+
+# Headline
+**Font:** Poppins
+
+**Font Size:** 24px
+<Canvas meta={TypographyStories}>
+  <Story of={TypographyStories.Headline} />
+</Canvas>
+
+# Description
+**Font:** Nunito Sans
+
+**Font Size:** 15px
+<Canvas meta={TypographyStories}>
+  <Story of={TypographyStories.Description} />
+</Canvas>

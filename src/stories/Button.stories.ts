@@ -7,6 +7,7 @@ const meta = {
   component: Button,
   parameters: {
     layout: "centered",
+    componentSubtitle: "Displays a Button component",
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Button>;
@@ -16,8 +17,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    label: "Button",
-    children: "Get Started"
+    children: "Get Started",
   },
 };
-
